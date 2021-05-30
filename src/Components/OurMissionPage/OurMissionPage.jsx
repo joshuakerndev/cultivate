@@ -1,13 +1,13 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './OurMissionPage.scss';
 
 const OurMissionPage = () => {
 
+    const [scrollTop, setScrollTop] = useState();
     //Get page y offset
     useEffect(() => {
         function handleScroll() {
-          const scrollTop = window.scrollY;
-          console.log(scrollTop);
+          setScrollTop(window.scrollY);
         }
     
         window.addEventListener('scroll', handleScroll);
@@ -23,6 +23,7 @@ const OurMissionPage = () => {
         >
             <div  
                 className="OurMissionDiv"
+                style={{ backgroundPositionY: `${scrollTop*0.7}px` }}
             >
                 <h1 className="OurMissionHeader">Div1</h1>
             </div>
