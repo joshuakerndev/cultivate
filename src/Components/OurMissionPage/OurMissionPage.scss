@@ -1,0 +1,42 @@
+.OurMissionPage {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.OurMissionDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    width: 100%;
+    height: 100vh;
+}
+
+.OurMissionHeader {
+    font-size: 60px;
+    background: white;
+    padding: 8px 24px;
+    border-radius: 16px;
+}
+
+.OurMissionDiv:nth-child(1) {
+    background-image: url('../../assets//imgs/13.jpg');
+    background-size: cover;
+}
+
+.OurMissionDiv:nth-child(2) {
+    background-color: maroon;
+}
+
+.OurMissionDiv:nth-child(3) {
+    background-image: url('../../assets//imgs/18.jpg');
+    height: 400px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.OurMissionDiv:nth-child(4) {
+    background-color: aquamarine;
+    background-size: cover;
+}
