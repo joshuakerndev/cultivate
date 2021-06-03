@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import './OurMissionPage.scss';
-import missionImage1 from '../../assets/imgs/16.jpg'
+import missionImage1 from '../../assets/imgs/16.jpg';
+import field from '../../assets/imgs/field.png';
+import houses from '../../assets/imgs/houses.png';
+import mountain from '../../assets/imgs/mountain.png';
+import sky from '../../assets/imgs/sky.png';
+
 
 const OurMissionPage = () => {
 
@@ -26,9 +31,35 @@ const OurMissionPage = () => {
                 className="OurMissionDiv"
                 style={{ backgroundPositionY: `${scrollTop*0.7}px` }}
             >
-                <h1 className="OurMissionHeader">What is the Secret to Cultivate?</h1>
+                <div className="MountainParallaxDiv">
+                    <img
+                        src={field}
+                        className="field"
+                        alt="field" />
+                    <img
+                        src={houses}
+                        className="houses"
+                        alt="houses" />
+                    <img
+                        src={mountain}
+                        className="mountain"
+                        alt="mountain" />
+                    <img
+                        src={sky}
+                        className="sky"
+                        alt="sky" />
+                    <h1 className="OurMissionHeader" id="OurMissionFirstHeader">What is the Secret to Cultivate?</h1>
+                    <section className="shadow">
+
+                    </section>  
+                </div>
+                
             </div>
+            
+            
+
             <div className="OurMissionDiv">
+                
                 <div className="OurMissionText1">
                     <h1>About Us</h1>
                     <p>
