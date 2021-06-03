@@ -34,21 +34,40 @@ const OurMissionPage = () => {
                 <div className="MountainParallaxDiv">
                     <img
                         src={field}
-                        className="field"
+                        style={{ transform: `translateY(${scrollTop*-0.25}px)` }}
+                        className="field translate"
+                        data-speed="0.2"
                         alt="field" />
                     <img
                         src={houses}
-                        className="houses"
+                        style={{ transform: `translateY(${scrollTop*0.1}px)` }}
+                        className="houses translate"
+                        data-speed="0.2"
                         alt="houses" />
                     <img
                         src={mountain}
-                        className="mountain"
+                        style={{ transform: `translateY(${scrollTop*0.4}px)` }}
+                        className="mountain translate"
+                        data-speed="0.2"
                         alt="mountain" />
                     <img
                         src={sky}
-                        className="sky"
+                        style={{ 
+                            transform: `translateY(${scrollTop*0.4}px)`
+                        }}
+                        className="sky translate"
+                        data-speed="0.2"
                         alt="sky" />
-                    <h1 className="OurMissionHeader" id="OurMissionFirstHeader">What is the Secret to Cultivate?</h1>
+                    <h1 
+                        className="OurMissionHeader"
+                        id="OurMissionFirstHeader"
+                        style={{ 
+                            transform: `translateY(${scrollTop*0.2}px)`,
+                            opacity:  `${1 - scrollTop*0.002}` 
+                        }}
+                    >
+                            What is the Secret to Cultivate?
+                        </h1>
                     <section className="shadow">
 
                     </section>  
@@ -60,7 +79,10 @@ const OurMissionPage = () => {
 
             <div className="OurMissionDiv">
                 
-                <div className="OurMissionText1">
+                <div 
+                    className="OurMissionText1"
+                    style={{ opacity:  `${-1 + scrollTop*0.003}` }}
+                >
                     <h1>About Us</h1>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget 
@@ -70,7 +92,10 @@ const OurMissionPage = () => {
                         sit amet arcu at bibendum.
                     </p>
                 </div>
-                <div className="OurMissionImage1">
+                <div 
+                    className="OurMissionImage1"
+                    style={{ opacity:  `${-1 + scrollTop*0.003}` }}
+                >
                     <img
                         src={missionImage1}
                         alt="Planter seedlings" />
