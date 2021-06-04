@@ -81,7 +81,7 @@ const OurMissionPage = () => {
                 
                 <div 
                     className="OurMissionText1"
-                    style={{ opacity:  `${-1 + scrollTop*0.003}` }}
+                    style={{ opacity:  `${-1 + scrollTop*0.0026}` }}
                 >
                     <h1>About Us</h1>
                     <p>
@@ -94,7 +94,7 @@ const OurMissionPage = () => {
                 </div>
                 <div 
                     className="OurMissionImage1"
-                    style={{ opacity:  `${-1 + scrollTop*0.003}` }}
+                    style={{ opacity:  `${-1 + scrollTop*0.0026}` }}
                 >
                     <img
                         src={missionImage1}
