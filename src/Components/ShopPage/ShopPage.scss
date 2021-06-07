@@ -1,7 +1,21 @@
 .ShopPage {
     width: 100%;
     height: 100vh;
-    display: flex;
+}
+
+.ShopBanner {
+    position: relative;
+    height: 200px;
+    background-image: url('../../assets/imgs/12.jpg');
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+}
+
+.ShopBannerContent {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .ShopGrid {
@@ -13,12 +27,9 @@
     background-color: blue;
 }
 
-.ProductContainer {
-    width: 200px;
-    height: 250px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid black;
+.ProductGridArea {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    height: 100%;
 }

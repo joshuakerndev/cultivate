@@ -1,21 +1,67 @@
 import React from 'react';
 import './ShopPage.scss';
 import { Container, Col, Row } from 'reactstrap';
+import BannerImage from '../../assets/imgs/11.jpg';
+import ProductCard from '../ProductCard/ProductCard';
 
 const ShopPage = () => {
+
+    const shopProducts = [
+        {
+            name: "Tomato",
+            price: "1.99 / lb",
+            description: "Delicious and ripe"
+        },
+        {
+            name: "Cabbage",
+            price: "0.99 / lb",
+            description: "Delicious and ripe"
+        },
+        {
+            name: "Orange",
+            price: "2.99 / lb",
+            description: "Delicious and ripe"
+        },
+        {
+            name: "Potato",
+            price: "1.56 / lb",
+            description: "Delicious and ripe"
+        },
+        {
+            name: "Strawberry",
+            price: "3.99 / lb",
+            description: "Delicious and ripe"
+        },
+        {
+            name: "Spinach",
+            price: "0.99 / lb",
+            description: "Delicious and ripe"
+        },
+        {
+            name: "Papaya",
+            price: "5.99 / lb",
+            description: "Delicious and ripe"
+        },
+    ]
+
     return (
         <div className="ShopPage">
+            <div className="ShopBanner">
+                <div className="ShopBannerContent">
+
+                </div>
+            </div>
             <Container fluid={true} className="ShopGrid">
                 <Row className="ShopGridRow">
-                    <Col xs="4" md="3" lg="2" className="ShopLeftSideBarMenu">
-                    
-                    </Col>
-                    <Col xs="8" md="9" lg="10" className="ProductContainer">
-                        <h1 className="ProductContainerName">Tomato</h1>
-                        <p className="ProductContainerPrice">$1.49 / lb.</p>
-                    </Col>
+                        {shopProducts.map((product) => (
+                            <Col xs="4">
+                            <ProductCard 
+                                product={product} 
+                                key={product.name}
+                            />
+                            </Col>
+                        ))}
                 </Row>
-                
             </Container>
         </div>
     )
