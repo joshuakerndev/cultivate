@@ -3,6 +3,7 @@ import './HomePage.scss';
 import { useInterval } from '../../hooks/useInterval';
 import NewSlider from '../NewSlider/NewSlider';
 import HomePageFrontBox from '../HomePageFrontBox/HomePageFrontBox';
+import SiteNavbar from '../SiteNavbar/SiteNavbar';
 
 const HomePage = () => {
 

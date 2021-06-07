@@ -1,35 +1,22 @@
 import React from 'react';
 import './ShopPage.scss';
+import { Container, Col, Row } from 'reactstrap';
 
 const ShopPage = () => {
     return (
         <div className="ShopPage">
-            <div className="ShopItemsGrid">
-                <div className="ProductContainer">
-                    <h1 className="ProductContainerName">Tomato</h1>
-                    <p className="ProductContainerPrice">$1.49 / lb.</p>
-                </div>
-                <div className="ProductContainer">
-                    <h1 className="ProductContainerName">Green Cabbage</h1>
-                    <p className="ProductContainerPrice">$0.99 / lb.</p>
-                </div>
-                <div className="ProductContainer">
-                    <h1 className="ProductContainerName">Yellow Onion</h1>
-                    <p className="ProductContainerPrice">$0.99 / lb.</p>
-                </div>
-                <div className="ProductContainer">
-                    <h1 className="ProductContainerName">Grapes</h1>
-                    <p className="ProductContainerPrice">$2.49 / lb.</p>
-                </div>
-                <div className="ProductContainer">
-                    <h1 className="ProductContainerName">Spinach</h1>
-                    <p className="ProductContainerPrice">$1.29 / lb.</p>
-                </div>
-                <div className="ProductContainer">
-                    <h1 className="ProductContainerName">Potato</h1>
-                    <p className="ProductContainerPrice">$0.99 / lb.</p>
-                </div>
-            </div>
+            <Container fluid={true} className="ShopGrid">
+                <Row className="ShopGridRow">
+                    <Col xs="4" md="3" lg="2" className="ShopLeftSideBarMenu">
+                    
+                    </Col>
+                    <Col xs="8" md="9" lg="10" className="ProductContainer">
+                        <h1 className="ProductContainerName">Tomato</h1>
+                        <p className="ProductContainerPrice">$1.49 / lb.</p>
+                    </Col>
+                </Row>
+                
+            </Container>
         </div>
     )
 }

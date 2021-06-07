@@ -102,7 +102,7 @@ const OurMissionPage = () => {
                 </div>
             </div>
             <div className="OurMissionDiv">
-                <h1 className="OurMissionHeader">Div3</h1>
+                <h1 className="OurMissionHeader">The secret is the care that goes into what we do</h1>
             </div>
             <div className="OurMissionDiv">
                 <h1 className="OurMissionHeader">Div4</h1>

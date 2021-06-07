@@ -21,6 +21,7 @@
         text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
         font-size: 42px;
         letter-spacing: 0.5rem;
+        padding-top: 40px;
         width: 100%;
     }
 
@@ -45,4 +46,76 @@
         background: white;
         transition: 300ms;
     }
+}
+
+.FrontBoxLink {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+.FrontBoxLink:hover {
+    text-decoration: none;
+    color: #40D3DC;
+    transition: 0.5s;
+}
+
+.FrontBoxRadioText {
+    margin-top: 30px;
+    padding-bottom: 10px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    transition: 1s;
+}
+
+//Container to hold Real Radio and Custom Radio buttons
+.CustomRadioContainer {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    //Hide real radio button
+    input {
+        position: absolute;
+        display: none;
+        cursor: pointer;
+    }
+}
+
+//Make Custom Radio Button
+.CustomRadioButton {
+    display: flex;
+    height: 20px;
+    width: 20px;
+    background-color: #ccc;
+    border-radius: 50%;
+    transition: 1s;
+    margin: 10px;
+    opacity: 0.95;
+}
+
+//Custom Radio Color stuff
+.CustomRadioContainer:hover input ~ .CustomRadioButton {
+    background-color: #eee;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    opacity: 0.95;
+}
+
+.CustomRadioContainer input:checked ~ .CustomRadioButton {
+    background-color: #40D3DC;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    opacity: 0.95;
+}
+
+.FrontBoxRadioButton {
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
 }
