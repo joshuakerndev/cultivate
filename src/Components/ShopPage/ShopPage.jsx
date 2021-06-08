@@ -51,18 +51,23 @@ const ShopPage = () => {
 
                 </div>
             </div>
-            <Container fluid={true} className="ShopGrid">
-                <Row className="ShopGridRow">
+            <div className="ShopContent">
+                <div className="ShopSideBar">
+
+                </div>
+                <Container fluid={true} className="ShopGrid">
+                    <Row className="ShopGridRow">
                         {shopProducts.map((product) => (
-                            <Col xs="4">
+                            <Col xs={{ size: 9, offset: 2 }} sm={{ size: 6, offset: 0 }} md="4" lg="3">
                             <ProductCard 
                                 product={product} 
                                 key={product.name}
                             />
                             </Col>
                         ))}
-                </Row>
-            </Container>
+                    </Row>
+                </Container>
+            </div>
         </div>
     )
 }

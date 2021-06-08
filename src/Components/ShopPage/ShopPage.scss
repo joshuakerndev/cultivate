@@ -18,8 +18,18 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.ShopContent {
+    display: flex;
+}
+
+.ShopSideBar {
+    width: 30%;
+    height: 100vh;
+    background-color: blue;
+}
+
 .ShopGrid {
-    width: 100%;
+    width: 70%;
     height: 100vh;
 }
 
